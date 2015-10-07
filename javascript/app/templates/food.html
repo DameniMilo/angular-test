@@ -1,0 +1,14 @@
+<a href="#/food-main/food-details/{{ food.name }}">{{ food.name }}</a>
+<span ng-switch="food.isSpicy">
+	<span ng-switch-when="true"> is spicy </span>
+	<span ng-switch-when="false"> is not spicy </span>
+</span>
+
+<button class="btn btn-danger btn-xs" type="button" ng-click="remove()">Remove Food</button>
+
+<div ng-repeat="market in marketsList(food.name)">
+	<span ng-if="$index == 0"><strong>Available at :</strong></span>
+	<div>
+		{{ market }}
+	</div>
+</div>

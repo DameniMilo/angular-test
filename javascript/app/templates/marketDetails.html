@@ -1,0 +1,11 @@
+<div class="row">
+	<div class="col-sm-12">
+		<h4 class="page-header">{{ params.marketName }}</h4>
+		You can find the following foods at this market:
+		<ul>
+			<li ng-repeat="food in fs.getMarketInfo(params.marketName).foods">
+				<a href="#/food-main/food-details/{{ food }}">{{ food }}</a>
+			</li>
+		</ul>
+	</div>
+</div>

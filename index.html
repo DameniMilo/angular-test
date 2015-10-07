@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Angular TEST</title>
+		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	</head>
+	<body ng-app="myAppToTest">
+		<div class="container">
+			<div class="row" ng-controller="navController">
+				<div class="col-sm-2">
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="#/">My controller</a></li>
+						<li><a href="#/tags-library">Tags library</a></li>
+						<li><a href="#/current-time-default-example">Current time default example</a></li>
+						<li><a href="#/current-time-modified">Current time modified</a></li>
+						<li><a href="#/food-main">Food</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-10" ng-view></div>
+			</div>
+		</div>
+		<script src="node_modules/angular/angular.min.js" type="text/javascript"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular-route.js" type="text/javascript"></script>
+		<script src="javascript/app/app.js" type="text/javascript"></script>
+		<script src="javascript/app/controllers/Nav.js" type="text/javascript"></script>
+		<script src="javascript/app/controllers/MyController.js" type="text/javascript"></script>
+		<script src="javascript/app/controllers/TagsLibrary.js" type="text/javascript"></script>
+		<script src="javascript/app/controllers/FoodMenu.js" type="text/javascript"></script>
+		<script src="javascript/app/controllers/Markets.js" type="text/javascript"></script>
+		<script src="javascript/app/controllers/DetailsController.js" type="text/javascript"></script>
+		<script src="javascript/app/services/FoodService.js" type="text/javascript"></script>
+		<script src="javascript/app/providers/FoodServiceProvider.js" type="text/javascript"></script>
+		<script src="javascript/app/directives/Food.js" type="text/javascript"></script>
+		<script src="javascript/app/controllers/Timer.js" type="text/javascript"></script>
+		<script src="javascript/app/directives/Timer.js" type="text/javascript"></script>
+		<script src="javascript/app/directives/TimerWC.js" type="text/javascript"></script>
+	</body>
+</html>
